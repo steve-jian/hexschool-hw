@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="xeogl/xeogl.js"></script>
+		<script src="xeogl/js/models/glTFModel.js"></script>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -30,17 +32,20 @@
       <a class="showmenu" href="#"><i class="fas fa-bars"></i></a>
     </div>
     <div class="hero">
-      <div class="hero-text">
-        <div class="hero-text-bg">
+      <div class="hero-text-bg">
+        <div class="hero-text">
           <h2 class="main">咬一口<br/ class="is-mobile"">就無法忘懷的漢堡</h2>
           <p class="sub">
-            七夕絕對無法錯過的好滋味<br />
+            絕對無法錯過的好滋味<br />
             <i class="fas fa-utensils"></i>
-            <span>六角大漢堡</span>
+            <span>超級大漢堡</span>
             <i class="fas fa-utensils"></i>
           </p>
         </div>
       </div>
+      <video autoplay muted loop>
+        <source src="assets/ad.mp4" type="video/mp4" />
+      </video>
     </div>
     <div class="special">
       <div class="container">
@@ -108,16 +113,44 @@
               <span class="title">高雄一口吃</span>
             </div>
             <p class="content">
-              <span>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span>
+              <span>
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </span>
               <br />
               <span class="name">-- 產品經理</span>
             </p>
           </div>
-          <div></div>
-          <div></div>
+          <div class="item">
+            <div class="avatar">
+              <img src="/assets/avatar_2.png" alt="avatar_2" />
+              <span class="title">廟口小霸王</span>
+            </div>
+            <p class="content">
+              <span>
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </span>
+              <br />
+              <span class="name">-- 金身道士</span>
+            </p>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="/assets/avatar_3.png" alt="avatar_3" />
+              <span class="title">春天也來了</span>
+            </div>
+            <p class="content">
+              <span>
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </span>
+              <br />
+              <span class="name">-- 美麗萬分</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <canvas id="myCanvas"">
+    </canvas>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
