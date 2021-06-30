@@ -204,7 +204,7 @@ button {
 }
 
 .hero {
-  background-image: url(images/banner.png);
+  background-image: url(./images/banner.png);
   background-position: center;
   background-size: cover;
   margin-bottom: 65px;
