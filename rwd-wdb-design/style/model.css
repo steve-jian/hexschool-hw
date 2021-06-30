@@ -1,0 +1,132 @@
+.model {
+  background-color: #efe9e7;
+  color: #3d1101;
+}
+
+.model .container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px 42px;
+}
+
+.model .logo {
+  margin: 0 auto 5px;
+}
+
+.model .subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 36px;
+  color: #3d1101;
+}
+
+.model .content {
+  margin: 0 auto;
+  padding: 15px 16px;
+  background: #efe9e7;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  border-top: rgba(255, 94, 69, 1) solid 3px;
+}
+
+.model .login-model {
+  width: 270px;
+}
+
+.model .register-model {
+  width: 285px;
+  margin: 0 auto;
+}
+
+.model .register-form{
+  max-width: 620px;
+}
+.model .content .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.model .content .item-name {
+  margin-bottom: 3px;
+}
+.model .content label {
+  display: block;
+}
+
+.model .inpt-group {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+}
+
+.model .inpt-group i {
+  padding: 8px 9px;
+  background-color: white;
+  border-radius: 3px;
+}
+.model .inpt-group input {
+  height: 32px;
+  padding: 0;
+  width: 100%;
+  border: 0px;
+}
+
+.model .forget-passwd {
+  display: inline-block;
+  color: rgba(255, 94, 69, 1);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.model .btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.model .btn-group button {
+  width: 125px;
+  height: 32px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  border: 0px;
+}
+
+.model .btn-group .orange {
+  background: rgba(245, 108, 35, 1);
+}
+
+.model .article{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.mb-1 {
+  margin-bottom: 1px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left {
+  justify-content: end !important;
+}
+
+@media(max-width:768px){
+  .model .register-form {
+    max-width: 300px;
+  }
+}
