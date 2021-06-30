@@ -14,18 +14,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/all.css" />
+    <title>六角西餐廳</title>
   </head>
   <body>
     <div class="header">
       <h1>
-        <a class="title" href="#">六角西餐廳</a>
+        <a class="title" href="./index.html#">六角西餐廳</a>
       </h1>
       <ul class="menu">
-        <li class="mr-30"><a href="#">特色</a></li>
-        <li class="mr-30"><a href="#">主廚</a></li>
-        <li><a href="#">地圖</a></li>
+        <li class="mr-30"><a href="#special">特色</a></li>
+        <li class="mr-30"><a href="#today-chef">主廚</a></li>
+        <li class="mr-30"><a href="#reservation">地圖</a></li>
+        <li class="mr-30"><a href="./login.html">登入</a></li>
+        <li><a href="./register.html">註冊</a></li>
       </ul>
       <a class="showmenu" href="#"><i class="fas fa-bars"></i></a>
     </div>
@@ -42,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="special">
+    <div id="special" class="special">
       <div class="container">
         <p class="title">
           客人總是在詢問<br />
@@ -78,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="today-chef">
+    <div id="today-chef" class="today-chef">
       <div class="container">
         <img src="assets/main_chef_brown.png" alt="main_chef_brown" />
         <div class="text">
@@ -98,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="review">
+    <div id="review" class="review">
       <div class="container">
         <h2>聽聽別人的感想</h2>
         <div class="items">
@@ -108,16 +110,102 @@
               <span class="title">高雄一口吃</span>
             </div>
             <p class="content">
-              <span>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span>
+              <span
+                >自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span
+              >
               <br />
               <span class="name">-- 產品經理</span>
             </p>
           </div>
-          <div></div>
-          <div></div>
+          <div class="item">
+            <div class="avatar">
+              <img src="/assets/avatar_2.png" alt="avatar_2" />
+              <span class="title">廟口小霸王</span>
+            </div>
+            <p class="content">
+              <span
+                >自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span
+              >
+              <br />
+              <span class="name">-- 金身道士</span>
+            </p>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="/assets/avatar_3.png" alt="avatar_3" />
+              <span class="title">春天也來了</span>
+            </div>
+            <p class="content">
+              <span
+                >自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span
+              >
+              <br />
+              <span class="name">-- 美麗萬分</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <div id="reservation" class="reservation">
+      <div class="container">
+        <h2 class="title">
+          我們的位置不太夠坐<br />
+          要不要先定位呢？
+        </h2>
+        <div class="content">
+          <img class="map" src="/assets/Map.png" alt="Map" />
+          <form class="form">
+            <label class="title">姓名</label>
+            <input class="data" type="text" placeholder="六角講師吃尾牙" />
+            <label class="title">電話</label>
+            <input class="data" type="text" placeholder="02-1234567" />
+            <label class="title">信箱</label>
+            <input class="data" type="text" placeholder="test@gmail.com" />
+            <label class="title">人數</label>
+            <input class="data" type="text" />
+            <label class="title">是否需要素食</label>
+            <p class="mb-30">
+              <label for="yes" class="title">是</label>
+              <input class="mr-36" type="radio" name="2" id="yes" />
+              <label for="yes" class="title">否</label>
+              <input type="radio" name="2" id="no" />
+            </p>
+            <div class="button-group">
+              <button type="button" class="cencel">取消</button>
+              <button type="button" class="submit">送出</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="col">
+          <h3 class="title">關於 六角西餐廳</h3>
+          <h4 class="content">
+            Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
+            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+          </h4>
+        </div>
+        <div class="col">
+          <h3 class="title">聯絡方式</h3>
+          <ul class="content">
+            <li>• 高雄市中正五路到底</li>
+            <li>• +886 886 886</li>
+            <li>• service@hexschool.com</li>
+          </ul>
+        </div>
+        <div class="col share">
+          <h3 class="logo">六角西餐廳</h3>
+          <div class="socail-button">
+            <i class="fab fa-google-plus-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
