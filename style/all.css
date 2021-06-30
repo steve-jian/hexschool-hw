@@ -187,46 +187,79 @@ button {
   margin: 0 auto;
 }
 
-.menu .menu-link {
+.menu-link {
   display: flex;
-  align-items: center;
-  padding-right: 21px;
 }
 
-.menu .menu-link a:hover {
-  border-bottom: #00cb9bed solid 3px;
+.menu-link li {
+  text-align: center;
+  position: relative;
 }
 
-.menu-link a {
-  color: #00cb9b;
-  padding: 10px 10px;
-  margin: 0 10px;
+.top-link {
+  color: #00ca9d;
+  display: block;
+  padding: 20px;
+  min-width: 50px;
 }
 
-.hero {
-  background-image: url(images/banner.png);
-  background-position: center;
-  background-size: cover;
+.top-link::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.top-link:hover::after {
+  border-top: #00ca9d 4px solid;
+}
+
+.menu-link .dropdown {
+  display: none;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+  background-color: black;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: #00ca9d;
+  white-space: nowrap;
+}
+
+.dropdown a:hover {
+  background: #f1f1f1;
+}
+
+.banner {
+  position: relative;
   margin-bottom: 65px;
-  height: 346px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.swiper-container {
+  width: 1000px;
+  height: 365px;
 }
 
-.hero .text-bg {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 160px;
-}
-
-.hero .container {
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.banner .text-bg {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  background: rgb(0, 0, 0, 0.5);
   font-size: 35px;
   line-height: 1.4;
+  padding: 30px 20px;
+  right: 0;
+  left: 0;
+  top: 175px;
+  transform: translateY(-50%);
 }
 
 .course {
@@ -375,7 +408,16 @@ button {
   line-height: 21px;
 }
 
-
-.footer .connection a{
+.footer .connection a {
   color: #cd3b72;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+  font-size: 50px;
+  cursor: pointer;
+  color: #00ca9d;
 }

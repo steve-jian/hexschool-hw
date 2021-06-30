@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/lightbox.css" />
+    <link rel="stylesheet" href="./style/all.css" />
+    <title>jQuery 最終作業</title>
   </head>
 
   <body>
@@ -27,24 +42,66 @@
       <div class="menu">
         <a href=""><img src="images/logo.png" alt="logo" /></a>
         <ul class="menu-link">
-          <li><a href="#">首頁</a></li>
-          <li><a href="#">產品資料</a></li>
-          <li><a href="#">聯絡我們</a></li>
+          <li>
+            <a href="#" class="top-link">首頁</a>
+            <ul class="dropdown">
+              <li><a href="#difference">課程差異</a></li>
+              <li><a href="#send">留下資料</a></li>
+              <li><a href="#footer">聯絡資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="top-link">產品資料</a>
+            <ul class="dropdown">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">RWD</a></li>
+              <li><a href="#">jQuery</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="top-link">聯絡我們</a>
+            <ul class="dropdown">
+              <li><a href="#">E-mail</a></li>
+              <li><a href="#">Line</a></li>
+              <li><a href="#">Fax</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </header>
-    <div class="hero">
-      <div class="text-bg">
-        <div class="container">
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner.png" alt="" />
+          </div>
+        </div>
+        <div class="text-bg">
           <p>六角學院</p>
           <p>讓你奠定良好的前端基礎</p>
         </div>
       </div>
     </div>
+
     <ul class="course container">
       <li class="col">
         <div class="img-box">
-          <img src="./images/html.png" alt="" />
+          <a
+            href="./images/html.png"
+            data-lightbox="image-1"
+            data-title="html5"
+          >
+            <img src="./images/html.png" alt="" />
+          </a>
         </div>
         <h2>HTML5 基礎教學</h2>
         <p>
@@ -53,7 +110,9 @@
       </li>
       <li class="col">
         <div class="img-box">
-          <img src="./images/rwd.png" alt="rwd" />
+          <a href="./images/rwd.png" data-lightbox="image-2" data-title="rwd">
+            <img src="./images/rwd.png" alt="rwd" />
+          </a>
         </div>
         <h2>響應式網站設計</h2>
         <p>
@@ -63,7 +122,13 @@
       </li>
       <li class="col">
         <div class="img-box">
-          <img src="./images/jQuery.png" alt="jQuery" />
+          <a
+            href="./images/jQuery.png"
+            data-lightbox="image-3"
+            data-title="jQuery"
+          >
+            <img src="./images/jQuery.png" alt="jQuery" />
+          </a>
         </div>
         <h2>jQuery 實戰教學</h2>
         <p>本課程有以下特色</p>
@@ -75,7 +140,7 @@
         </ul>
       </li>
     </ul>
-    <div class="difference container">
+    <div id="difference" class="difference container">
       <h2 class="title">線上及實體課程的差異</h2>
       <table class="difference-table">
         <tr>
@@ -122,7 +187,7 @@
         </tr>
       </table>
     </div>
-    <div class="send">
+    <div id="send" class="send">
       <div class="container">
         <h2 class="title">
           對我們課程有興趣嗎？<br />
@@ -142,7 +207,7 @@
         </form>
       </div>
     </div>
-    <footer class="footer container">
+    <footer id="footer" class="footer container">
       <div><img src="./images/footerLogo.png" alt="footerLogo" /></div>
       <ul class="connection">
         <li>
@@ -151,5 +216,14 @@
         <li>電話：<a href="tel:+0999-123456">0999-123456</a></li>
       </ul>
     </footer>
+    <a class="go-top"><i class="fas fa-arrow-circle-up"></i></a>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
