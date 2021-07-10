@@ -1,0 +1,35 @@
+img {
+  display: block;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container li {
+  display: flex;
+  margin-bottom: 24px;
+  margin-right: 20px;
+}
+
+.container li img {
+  margin-right: 20px;
+}
+
+.container li h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+footer p,
+.container li span {
+  font-size: 16px;
+  line-height: 1.5;
+}
